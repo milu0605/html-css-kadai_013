@@ -1,0 +1,111 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+#main-visual > img {
+  width: 100%;
+}
+
+body {
+  min-width: 375px;
+  margin: 0;
+}
+
+#nav-pc {
+  display: none;
+}
+
+#menu-sp {
+  float: right;
+  padding: 0;
+}
+
+#nav-sp {
+  background-color: #ce933e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none; 
+  z-index: 100;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#logo-sp {
+  margin: 80px 0 30px 20px;
+}
+
+#nav-sp > a {
+  display: block;
+}
+
+#nav-sp > a:link {
+  color: #ffffff; 
+}
+
+#nav-sp > a:visited {
+  color: #ffffff; 
+}
+
+#nav-sp > a:hover {
+  color: #ffffff; 
+}
+
+#nav-sp > a:hover {
+  text-decoration: underline;
+}
+
+#nav-sp > a:active {
+  color: #ffffff; 
+}
+
+#nav-sp > .menu {
+  display: block; 
+  margin: 0 20px; /* 左右に20pxのmarginを設定 */
+  height: 44px; /* 高さを44pxに指定 */
+  font-size: 16px; /* フォントサイズを16pxに指定 */
+  text-decoration: none; /* テキストの下線を無くす */
+  background-image: url("images/arrow.png"); /* 背景画像を指定 */
+  background-repeat: no-repeat; /* 背景画像を繰り返さない */
+  background-position: right top; /* 背景画像の位置を右上に指定 */
+}
+
+#menu-sp, #nav-sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #menu-sp, #nav-sp {
+    display: block;
+  }
+
+
+/*================
+PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  #menu-sp, #nav-sp {
+    display: none;
+   }
+  
+  
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+}
